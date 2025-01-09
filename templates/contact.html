@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='contact.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div class="item">
+    <div class="contact">
+        <div class="first-text">Let's get in touch</div>
+        <img height=150px width=50px src="https://img.freepik.com/free-vector/white-avatars-colorful-speech-bubbles_23-2147490823.jpg?t=st=1733663140~exp=1733666740~hmac=25b7c2e3ad746a3ed0a25f04e5d944dd540d43997487059c3b25b15f42567ddd&w=740" alt="" class="image">
+        <div class="social-links">
+            <span class="second-text">Connect with Us</span>
+            <ul class="social-media">
+                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+            </ul>
+            </div>
+    </div>
+    <div class="submit-form">
+        <h1 class="third-text">Contact Us</h1>
+        <form  method="POST" action="">
+            <div class="input-box">
+                <input type="name" class="input" required>
+                <label for="">Name</label>
+            </div>
+            <div class="input-box">
+                <input type="email" class="input" required>
+                <label for="">Email</label>
+            </div>
+            <div class="input-box">
+                <input type="tel" class="input" required>
+                <label for="">Phone</label>
+            </div>
+            <div class="input-box">
+                <textarea class="input" required id="message" cols="30" rows="10"></textarea>
+                <label for="">Message</label>
+            </div>
+            <input type="submit" class="btn" value="submit">
+        </form>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        /* Form container styling */
+        form {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            max-width: 100%;
+        }
+        
+        /* Heading */
+        form h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        /* Input fields styling */
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        /* Input focus effect */
+        input[type="text"]:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+        
+        /* Submit button styling */
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        /* Button hover effect */
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 480px) {
+            form {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>        
+
+   
+</head>
+<body>
+    <form method="POST" action="">
+        <h1 >REGISTER USER</h1>
+       <input name="username" type="text" placeholder="username" id="username">
+        <input name="mobile" type="text" placeholder="Mobile" id="mobile">
+        <input name="email" type="text" placeholder="Email" id="email">
+        <input name="address" type="text" placeholder="Address" id="address">
+        <input name="password" type="text" placeholder="Password" id="password">
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
